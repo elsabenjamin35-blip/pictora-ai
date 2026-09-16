@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#08090d"
+    >
+
+    <title>Pictora AI — AI Storybook Maker</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================
+         MOBILE TOP BAR
+    ========================== -->
+
+    <header class="mobile-header">
+
+        <button
+            id="mobileMenuBtn"
+            class="menu-btn"
+            type="button"
+            aria-label="Open menu"
+        >
+            ☰
+        </button>
+
+        <div class="mobile-brand">
+            <div class="brand-mark">✦</div>
+
+            <span>Pictora AI</span>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         MOBILE OVERLAY
+    ========================== -->
+
+    <div
+        id="menuOverlay"
+        class="menu-overlay"
+    ></div>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="brand">
+
+                <div class="brand-logo">
+                    ✦
+                </div>
+
+                <div class="brand-text">
+
+                    <h1>
+                        Pictora AI
+                    </h1>
+
+                    <span>
+                        AI Storybook Maker
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- MOBILE CLOSE BUTTON -->
+
+            <button
+                id="menuCloseBtn"
+                class="menu-close"
+                type="button"
+                aria-label="Close menu"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- =====================
+             NAVIGATION
+        ====================== -->
+
+        <nav class="sidebar-nav">
+
+            <button
+                type="button"
+                class="nav-item active"
+                data-section="dashboard"
+            >
+                <span class="nav-icon">⌂</span>
+                <span>Dashboard</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="nav-item"
+                data-section="storyEditor"
+            >
+                <span class="nav-icon">✎</span>
+                <span>Story Editor</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="nav-item"
+                data-section="characters"
+            >
+                <span class="nav-icon">♙</span>
+                <span>Characters</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="nav-item"
+                data-section="scenes"
+            >
+                <span class="nav-icon">▧</span>
+                <span>Scenes</span>
+            </button>
+
+
+            <button
+                type="button"
+                class="nav-item"
+                data-section="bookPreview"
+            >
+                <span class="nav-icon">▤</span>
+                <span>Book Preview</span>
+            </button>
+
+        </nav>
+
+
+        <!-- =====================
+             SIDEBAR BOTTOM
+        ====================== -->
+
+        <div class="sidebar-bottom">
+
+            <button
+                type="button"
+                class="new-project-btn"
+                id="newProjectBtn"
+            >
+                <span>＋</span>
+                New Project
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+
+        <!-- =====================
+             DASHBOARD
+        ====================== -->
+
+        <section
+            id="dashboard"
+            class="section active"
+        >
+
+            <div class="top-header">
+
+                <div>
+
+                    <span class="small-label">
+                        PICTORA AI
+                    </span>
+
+                    <h2>
+                        Create stories that come alive.
+                    </h2>
+
+                    <p>
+                        Turn your imagination into an
+                        illustrated storybook.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="welcome-card">
+
+                <div class="welcome-content">
+
+                    <span class="small-label">
+                        AI STORYBOOK CREATOR
+                    </span>
+
+                    <h1>
+                        Your story.
+                        <br>
+                        Your world.
+                        <br>
+                        <span>Illustrated by AI.</span>
+                    </h1>
+
+                    <p>
+                        Write a story and Pictora AI will
+                        analyze the characters, divide the
+                        story into scenes and create visual
+                        illustrations for your book.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="primary-btn"
+                        id="startWritingBtn"
+                    >
+                        Start Creating
+                    </button>
+
+                </div>
+
+
+                <div class="welcome-art">
+
+                    <div class="art-glow"></div>
+
+                    <div class="art-book">
+                        📖
+                    </div>
+
+                    <div class="floating-symbol symbol-one">
+                        ✦
+                    </div>
+
+                    <div class="floating-symbol symbol-two">
+                        ✧
+                    </div>
+
+                    <div class="floating-symbol symbol-three">
+                        ✦
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD CARDS -->
+
+            <div class="section-title">
+
+                <div>
+                    <span class="small-label">
+                        WORKFLOW
+                    </span>
+
+                    <h3>
+                        From idea to storybook
+                    </h3>
+                </div>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ✎
+                    </div>
+
+                    <h3>
+                        01. Write
+                    </h3>
+
+                    <p>
+                        Write or paste your story into
+                        the Pictora story editor.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ✨
+                    </div>
+
+                    <h3>
+                        02. Analyze
+                    </h3>
+
+                    <p>
+                        AI identifies characters,
+                        locations and important events.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎨
+                    </div>
+
+                    <h3>
+                        03. Illustrate
+                    </h3>
+
+                    <p>
+                        Generate artwork for every
+                        scene of your story.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📖
+                    </div>
+
+                    <h3>
+                        04. Read
+                    </h3>
+
+                    <p>
+                        Read the finished illustrated
+                        story as a digital book.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================
+             STORY EDITOR
+        ====================== -->
+
+        <section
+            id="storyEditor"
+            class="section"
+        >
+
+            <div class="top-header">
+
+                <div>
+
+                    <span class="small-label">
+                        STORY EDITOR
+                    </span>
+
+                    <h2>
+                        Build your story
+                    </h2>
+
+                    <p>
+                        Give Pictora AI the story you want
+                        to transform.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="editor-panel">
+
+
+                <!-- STORY DETAILS -->
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="storyTitle">
+                            Story Title
+                        </label>
+
+                        <input
+                            id="storyTitle"
+                            type="text"
+                            placeholder="Enter your story title"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="storyAuthor">
+                            Author
+                        </label>
+
+                        <input
+                            id="storyAuthor"
+                            type="text"
+                            placeholder="Enter author name"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- STYLE -->
+
+                <div class="form-group">
+
+                    <label for="storyStyle">
+                        Illustration Style
+                    </label>
+
+                    <select id="storyStyle">
+
+                        <option value="cinematic illustrated">
+                            Cinematic Illustrated
+                        </option>
+
+                        <option value="comic book">
+                            Comic Book
+                        </option>
+
+                        <option value="children's storybook">
+                            Children's Storybook
+                        </option>
+
+                        <option value="anime">
+                            Anime
+                        </option>
+
+                        <option value="watercolor storybook">
+                            Watercolor Storybook
+                        </option>
+
+                        <option value="3D animated">
+                            3D Animated
+                        </option>
+
+                        <option value="realistic cinematic">
+                            Realistic Cinematic
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- STORY TEXT -->
+
+                <div class="form-group">
+
+                    <div class="field-header">
+
+                        <label for="storyText">
+                            Your Story
+                        </label>
+
+                        <span id="wordCount">
+                            0 words
+                        </span>
+
+                    </div>
+
+
+                    <textarea
+                        id="storyText"
+                        rows="18"
+                        placeholder="Write or paste your story here..."
+                    ></textarea>
+
+                </div>
+
+
+                <!-- AI ACTIONS -->
+
+                <div class="ai-actions">
+
+                    <button
+                        type="button"
+                        id="analyzeStoryBtn"
+                        class="primary-btn"
+                    >
+                        ✨ Analyze Story with AI
+                    </button>
+
+                    <button
+                        type="button"
+                        class="secondary-btn"
+                        id="clearStoryBtn"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <!-- AI STATUS -->
+
+                <div
+                    id="aiStatus"
+                    class="ai-status"
+                >
+
+                    <div class="status-icon">
+                        ✨
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Pictora AI
+                        </strong>
+
+                        <p>
+                            Write your story and let AI
+                            prepare it for illustration.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ANALYSIS -->
+
+                <div class="analysis-panel">
+
+                    <div class="panel-header">
+
+                        <div>
+
+                            <span class="small-label">
+                                AI ANALYSIS
+                            </span>
+
+                            <h3>
+                                Story Breakdown
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div id="analysisContent">
+
+                        <div class="empty-state">
+
+                            <div class="empty-icon">
+                                ✨
+                            </div>
+
+                            <h3>
+                                Nothing analyzed yet
+                            </h3>
+
+                            <p>
+                                Your AI story analysis will
+                                appear here.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================
+             CHARACTERS
+        ====================== -->
+
+        <section
+            id="characters"
+            class="section"
+        >
+
+            <div class="top-header">
+
+                <div>
+
+                    <span class="small-label">
+                        CHARACTER BIBLE
+                    </span>
+
+                    <h2>
+                        Characters
+                    </h2>
+
+                    <p>
+                        Pictora AI keeps important visual
+                        details connected to your characters.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="character-toolbar">
+
+                <div>
+
+                    <strong>
+                        Character consistency
+                    </strong>
+
+                    <p>
+                        These descriptions are used when
+                        creating scene illustrations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="characterList"
+                class="character-grid"
+            >
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        ♙
+                    </div>
+
+                    <h3>
+                        No characters yet
+                    </h3>
+
+                    <p>
+                        Analyze your story to identify
+                        its characters.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================
+             SCENES
+        ====================== -->
+
+        <section
+            id="scenes"
+            class="section"
+        >
+
+            <div class="top-header">
+
+                <div>
+
+                    <span class="small-label">
+                        SCENE STUDIO
+                    </span>
+
+                    <h2>
+                        Story Scenes
+                    </h2>
+
+                    <p>
+                        Every scene contains its story text
+                        and corresponding illustration.
+                    </p>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    id="generateAllBtn"
+                    class="primary-btn"
+                >
+                    🎨 Generate All
+                </button>
+
+            </div>
+
+
+            <div
+                id="sceneList"
+                class="scene-list"
+            >
+
+                <div class="empty-state">
+
+                    <div class="empty-icon">
+                        🎬
+                    </div>
+
+                    <h3>
+                        No scenes yet
+                    </h3>
+
+                    <p>
+                        Analyze your story first.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================
+             BOOK PREVIEW
+        ====================== -->
+
+        <section
+            id="bookPreview"
+            class="section"
+        >
+
+            <div class="top-header">
+
+                <div>
+
+                    <span class="small-label">
+                        BOOK PREVIEW
+                    </span>
+
+                    <h2>
+                        Your Storybook
+                    </h2>
+
+                    <p>
+                        Read your story together with
+                        its illustrations.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="book-container">
+
+                <div
+                    id="bookPage"
+                    class="book-page"
+                >
+
+                    <div class="book-cover">
+
+                        <div class="cover-star">
+                            ✦
+                        </div>
+
+                        <h1>
+                            Pictora AI
+                        </h1>
+
+                        <p>
+                            Your illustrated storybook
+                        </p>
+
+                        <span>
+                            Start creating your story
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="book-navigation">
+
+                    <button
+                        type="button"
+                        id="previousPageBtn"
+                        class="secondary-btn"
+                    >
+                        ← Previous
+                    </button>
+
+
+                    <span id="pageIndicator">
+                        0 / 0
+                    </span>
+
+
+                    <button
+                        type="button"
+                        id="nextPageBtn"
+                        class="primary-btn"
+                    >
+                        Next →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         TOAST
+    ========================== -->
+
+    <div
+        id="toast"
+        class="toast"
+    ></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
